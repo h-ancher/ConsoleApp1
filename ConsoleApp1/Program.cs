@@ -4,9 +4,17 @@ namespace ConsoleApp1
 {
     class Program
     {
-        static void Main(string[] args)
+        static void Main(String[] args)
         {
-            Console.WriteLine("Hello World!");
+			Int32 iSum = 0;
+			Random rnd = new Random();
+			Int32 iRnd = rnd.Next(1, 100);
+
+			for (Int32 i = 0; i < iRnd; i++)
+			{
+				iSum += i;
+			}
+            Console.WriteLine("Rnd = {0}, Sum = {1}", iRnd, iSum);
         }
     }
 }
